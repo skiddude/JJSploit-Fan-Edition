@@ -20,7 +20,7 @@ var firstFail = false
 function GetLatestData(){
     return new Promise((resolve, reject) => {
         //Fetch latest information
-        axios.get('https://github.com/OfficiallyMelon/JJSploit-Binaries/raw/main/ServerData/latestdata.txt')
+        axios.get('https://raw.githubusercontent.com/skiddude/JJSploit-Community-Edition/main/ServerData/latestdata.txt')
         .then(res => { if(typeof res.data === "object") resolve(res.data) })
         //Fallback to reading the Github backup if the site is down
         .catch(async e => {
