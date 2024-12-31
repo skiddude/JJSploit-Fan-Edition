@@ -23,7 +23,7 @@ async function checkGameRunning(){
 		}, 1000)
 	})
 
-	/* Game detected! Consider auto-atttach here or something */
+	/* Game detected! Consider auto-attach here or something */
 
 	//Wait until the game closes
 	await new Promise((resolve, reject) => {
